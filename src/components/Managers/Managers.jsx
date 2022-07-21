@@ -17,7 +17,7 @@ const Managers = () => {
   }, [data])
   return (
     <div>
-      <h1 onClick={handleGetManagers}>Component</h1>
+      <h2 onClick={handleGetManagers}>Get managers</h2>
       {data.map(manager =>{
         return <p key={manager.id}>{manager.name} id: {manager.id}</p>
       })}
